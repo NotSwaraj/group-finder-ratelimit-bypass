@@ -3,7 +3,6 @@ try:
 	import requests, random, keep_alive
 except ModuleNotFoundError:
 	os.system("pip install requests") # i swear requests is prebuit in tho 
-keep_alive.keep_alive()	
 while True:
 	id = random.randint(5000000, 8500000)
 	r = requests.get(f"https://www.roblox.com/groups/group.aspx?gid={id}") # yes dont bully me it searches html which is not the best idea but it does its job lol
