@@ -1,6 +1,6 @@
 import os 
 try:
-	import requests, random, threading
+	import requests, random
 except ModuleNotFoundError:
 	os.system("pip install requests") # i swear requests is prebuit in tho 
 
@@ -12,7 +12,7 @@ def check(id):
 		robux = "Not public"
 	return robux		
 
-def main():
+while True:
 	id = random.randint(5000000, 8500000)
 	r = requests.get(f"https://www.roblox.com/groups/group.aspx?gid={id}") # yes dont bully me it searches html which is not the best idea but it does its job lol
 	if 'owned by' not in r.text: # from the html
@@ -27,6 +27,3 @@ def main():
 			print(f"\033[91m[ INVALID ] > {id}\033[39m")
 	else:
 		print(f"\033[91m[ INVALID ] > {id}\033[39m")	
-
-for i in range(50): # i know this says 50 but try not to edit this cause it will most likely get you ratelimited
-	threading.Thread(target=main).start()
