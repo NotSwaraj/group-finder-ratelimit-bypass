@@ -1,3 +1,4 @@
 # group-finder-ratelimit-bypass
 
-Decided to make this cause i saw skids selling this, fuck you if you sell this, it took me less than 10 mins to make it and its like 20 lines
+there are 2 files lol, 1 is the old one second is v2 :D
+v2 is alot faster and has a counter and it stops at ratelimits :)
