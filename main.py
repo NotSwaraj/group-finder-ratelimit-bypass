@@ -1,6 +1,6 @@
 import os 
 try:
-	import requests, random, keep_alive
+	import requests, random
 except ModuleNotFoundError:
 	os.system("pip install requests") # i swear requests is prebuit in tho 
 while True:
